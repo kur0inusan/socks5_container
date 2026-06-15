@@ -1,0 +1,8 @@
+services:
+  socks5:
+    build: .
+    image: microsocks-proxy:latest
+    container_name: microsocks-proxy
+    ports:
+      - "1080:1080"
+    restart: unless-stopped
